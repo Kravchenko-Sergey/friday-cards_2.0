@@ -24,42 +24,40 @@ type DropdownProps = {
 export const Dropdown: FC<DropdownProps> = ({ name, email, src, items }) => {
   return (
     <DropdownMenu.Root>
-      <div className={s.wrapper}>
-        <DropdownMenu.Trigger className={s.trigger}>
-          <Typography variant={'Subtitle1'} className={s.name}>
-            {name}
-          </Typography>
-          <Avatar src={src} />
-        </DropdownMenu.Trigger>
-        <DropdownMenu.Content className={s.content} sideOffset={10} align={'end'}>
-          {src && (
-            <div className={`${s.item} ${s.head}`}>
-              <Avatar src={src} />
-              <div className={s.info}>
-                <Typography variant={'Subtitle2'} className={s.name}>
-                  {name}
-                </Typography>
-                <Typography variant={'Caption'} className={s.email}>
-                  {email}
-                </Typography>
-              </div>
+      <DropdownMenu.Trigger className={s.trigger}>
+        <Typography variant={'Subtitle1'} className={s.name} style={{ color: 'white' }}>
+          {name}
+        </Typography>
+        <Avatar src={src} />
+      </DropdownMenu.Trigger>
+      <DropdownMenu.Content className={s.content} sideOffset={10} align={'end'}>
+        {src && (
+          <div className={`${s.item} ${s.head}`}>
+            <Avatar src={src} />
+            <div className={s.info}>
+              <Typography variant={'Subtitle2'} className={s.name}>
+                {name}
+              </Typography>
+              <Typography variant={'Caption'} className={s.email}>
+                {email}
+              </Typography>
             </div>
-          )}
-          <DropdownMenu.Separator className={s.separator} />
-          {items.map(item => (
-            <>
-              <DropdownMenu.Item key={item.id} onSelect={item.onClick} className={s.item}>
-                <img src={item.icon} alt="itemIcon" className={s.icon} />
-                <Typography className={s.title}>{item.title}</Typography>
-              </DropdownMenu.Item>
-              <DropdownMenu.Separator className={s.separator} />
-            </>
-          ))}
-          <DropdownMenu.Arrow className={s.arrow_block} asChild>
-            <div className={s.arrow} />
-          </DropdownMenu.Arrow>
-        </DropdownMenu.Content>
-      </div>
+          </div>
+        )}
+        <DropdownMenu.Separator className={s.separator} />
+        {items.map(item => (
+          <>
+            <DropdownMenu.Item key={item.id} onSelect={item.onClick} className={s.item}>
+              <img src={item.icon} alt="itemIcon" className={s.icon} />
+              <Typography className={s.title}>{item.title}</Typography>
+            </DropdownMenu.Item>
+            <DropdownMenu.Separator className={s.separator} />
+          </>
+        ))}
+        <DropdownMenu.Arrow className={s.arrow_block} asChild>
+          <div className={s.arrow} />
+        </DropdownMenu.Arrow>
+      </DropdownMenu.Content>
     </DropdownMenu.Root>
   )
 }
