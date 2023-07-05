@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
+import { LogOutOutline } from '../../../assets/dropdown/logOutOutline.tsx'
+
 import { Button } from './'
 
 const meta = {
@@ -25,6 +27,18 @@ export const Primary: Story = {
   },
 }
 
+export const PrimaryWithIcon: Story = {
+  args: {
+    variant: 'primary',
+    children: (
+      <>
+        <LogOutOutline /> Primary Button
+      </>
+    ),
+    disabled: false,
+  },
+}
+
 export const Secondary: Story = {
   args: {
     variant: 'secondary',
@@ -32,6 +46,19 @@ export const Secondary: Story = {
     disabled: false,
   },
 }
+
+export const SecondaryWithIcon: Story = {
+  args: {
+    variant: 'primary',
+    children: (
+      <>
+        <LogOutOutline /> Secondary Button
+      </>
+    ),
+    disabled: false,
+  },
+}
+
 export const Tertiary: Story = {
   args: {
     variant: 'tertiary',

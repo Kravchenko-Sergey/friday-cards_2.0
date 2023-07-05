@@ -1,6 +1,8 @@
 import { useState } from 'react'
 
+import { LogOutOutline } from '../src/assets/dropdown/logOutOutline.tsx'
 import { Avatar } from '../src/components/ui/avatar/avatar.tsx'
+import { Button } from '../src/components/ui/button'
 import { Dropdown } from '../src/components/ui/dropdown/dropdown.tsx'
 import { Header } from '../src/components/ui/header'
 
@@ -37,13 +39,7 @@ export const App = () => {
   ]
 
   return (
-    <div
-      style={{
-        margin: '0 auto',
-        display: 'flex',
-        flexDirection: 'column',
-      }}
-    >
+    <div>
       <Header
         isLoggedIn={isLoggedIn}
         handleButton={handleButton}

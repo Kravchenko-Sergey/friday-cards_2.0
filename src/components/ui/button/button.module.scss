@@ -43,6 +43,8 @@
 .primary {
   @include button;
 
+  gap: 10px;
+
   background-color: var(--color-accent-500);
   box-shadow: 0 4px 18px 0 rgba(140, 97, 255, 0.35);
 

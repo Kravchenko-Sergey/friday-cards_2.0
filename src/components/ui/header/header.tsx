@@ -1,7 +1,5 @@
 import { FC } from 'react'
 
-import { Link } from 'react-router-dom'
-
 import { Button } from '../button'
 import { Dropdown } from '../dropdown/dropdown.tsx'
 import { Typography } from '../typography'
