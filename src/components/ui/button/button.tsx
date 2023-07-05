@@ -4,6 +4,7 @@ import s from './button.module.scss'
 
 export type ButtonProps<T extends ElementType = 'button'> = {
   as?: T
+  children?: React.ReactNode
   variant?: 'primary' | 'secondary' | 'tertiary' | 'link'
   fullWidth?: boolean
   className?: string
