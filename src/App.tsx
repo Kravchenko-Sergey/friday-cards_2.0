@@ -60,7 +60,7 @@ export const App = () => {
         src={avatarSrc}
         items={items}
       />
-      <TextField label={'input'} />
+      <TextField label={'input'} type="password" />
       <Checkbox checked={checked} onChange={handleChecked} />
     </div>
   )
