@@ -1,0 +1,9 @@
+.container {
+  width: 26.25rem;
+  height: 34.5rem;
+  background-color: var(--color-dark-700);
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px rgb(0 0 0 / 10%), -1px -1px 2px rgb(0 0 0 / 10%);
+  display: flex;
+  justify-content: center;
+}

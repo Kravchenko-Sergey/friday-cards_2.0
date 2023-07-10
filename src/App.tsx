@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
-import { LogOutOutline } from '../src/assets/dropdown/logOutOutline.tsx'
 import { Avatar } from '../src/components/ui/avatar/avatar.tsx'
-import { Button } from '../src/components/ui/button'
+import { Checkbox } from '../src/components/ui/checkbox/checkbox.tsx'
 import { Dropdown } from '../src/components/ui/dropdown/dropdown.tsx'
 import { Header } from '../src/components/ui/header'
+import { TextField } from '../src/components/ui/textField'
 
 import logoutIcon from './assets/dropdown/log-out-outline.svg'
 import personIcon from './assets/dropdown/person-outline.svg'
@@ -37,9 +37,14 @@ export const App = () => {
       },
     },
   ]
+  //checkbox
+  const [checked, setChecked] = useState(false)
+  const handleChecked = () => {
+    setChecked(!checked)
+  }
 
   return (
-    <div>
+    <div style={{ height: 10000, backgroundColor: '#000000' }}>
       <Header
         isLoggedIn={isLoggedIn}
         handleButton={handleButton}
@@ -55,6 +60,8 @@ export const App = () => {
         src={avatarSrc}
         items={items}
       />
+      <TextField label={'input'} />
+      <Checkbox checked={checked} onChange={handleChecked} />
     </div>
   )
 }

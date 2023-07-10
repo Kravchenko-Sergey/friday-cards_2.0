@@ -7,20 +7,27 @@ const meta = {
   component: Checkbox,
   tags: ['autodocs'],
   argTypes: {
-    variant: {
-      options: ['primary', 'secondary', 'tertiary', 'link'],
-      control: { type: 'radio' },
-    },
+    label: {},
+    checked: {},
+    disabled: {},
   },
 } satisfies Meta<typeof Checkbox>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const gfhPrimary: Story = {
+export const Checked: Story = {
   args: {
-    variant: 'primary',
-    children: 'Primary Button',
+    label: 'Click here',
+    checked: true,
+    disabled: false,
+  },
+}
+
+export const UnChecked: Story = {
+  args: {
+    label: 'Click here',
+    checked: false,
     disabled: false,
   },
 }
