@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 import { CheckEmail } from '../src/components/auth/check-email/check-email.tsx'
+import { CreateNewPassword } from '../src/components/auth/create-new-password/create-new-password.tsx'
 import { ForgotPassword } from '../src/components/auth/forgot-password/forgot-password.tsx'
 import { LoginForm } from '../src/components/auth/login-form'
 import { RegisterForm } from '../src/components/auth/register-form'
@@ -70,6 +71,7 @@ export const App = () => {
       <RegisterForm />
       <ForgotPassword />
       <CheckEmail email={'sergey.ose.pyatigorsk@gmail.com'} />
+      <CreateNewPassword />
     </div>
   )
 }
