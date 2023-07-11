@@ -54,7 +54,6 @@ export const TextField: FC<TextFieldProps> = ({
           </button>
         )}
       </div>
-
       <Typography variant="error" className={s.error}>
         {errorMessage}
       </Typography>

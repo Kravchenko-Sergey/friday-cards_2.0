@@ -8,7 +8,7 @@ import { Typography } from '../typography/typography.tsx'
 
 import s from './checkbox.module.scss'
 
-type CheckboxProps = {
+export type CheckboxProps = {
   className?: string
   checked?: boolean
   onChange?: (checked: boolean) => void
@@ -22,12 +22,12 @@ type CheckboxProps = {
 export const Checkbox: FC<CheckboxProps> = ({
   checked,
   onChange,
-  position,
+  //position,
   disabled,
   required,
   label,
   id,
-  className,
+  //className,
 }) => {
   return (
     <div className={s.container}>

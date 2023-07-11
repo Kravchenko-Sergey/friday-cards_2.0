@@ -1,0 +1,51 @@
+.card {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 33px 26px 29px 26px;
+  .title {
+    margin-bottom: 27px;
+    text-align: center;
+    color: var(--color-light-100);
+  }
+  .textField {
+    margin-bottom: 24px;
+  }
+  .textField:last-child {
+    margin-bottom: 12px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 6px;
+}
+
+.forgotPassword {
+  text-align: end;
+  margin-bottom: 66px;
+  color: var(--color-light-100);
+}
+
+.button {
+  margin-bottom: 20px;
+}
+
+.noAccount {
+  margin-bottom: 11px;
+  color: var(--color-light-900);
+  text-align: center;
+}
+
+.signUpLink {
+  font-weight: 700;
+  color: var(--color-accent-500);
+  text-decoration-line: underline;
+  display: flex;
+  justify-content: center;
+}
