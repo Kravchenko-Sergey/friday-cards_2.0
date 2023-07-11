@@ -7,17 +7,17 @@
     text-align: center;
     color: var(--color-light-100);
   }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
   .textField {
     margin-bottom: 24px;
   }
   .textField:last-child {
     margin-bottom: 12px;
   }
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
 }
 
 .checkbox {

@@ -40,7 +40,7 @@ export const LoginForm = () => {
     <Card>
       <div className={s.card}>
         <Typography variant={'Large'} as={'h1'} className={s.title}>
-          Sign in
+          Sign In
         </Typography>
         <form onSubmit={onSubmit} className={s.form}>
           <ControlledTextField

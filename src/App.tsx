@@ -1,6 +1,8 @@
 import { useState } from 'react'
 
+import { ForgotPassword } from '../src/components/auth/forgot-password/forgot-password.tsx'
 import { LoginForm } from '../src/components/auth/login-form'
+import { RegisterForm } from '../src/components/auth/register-form'
 import { Avatar } from '../src/components/ui/avatar/avatar.tsx'
 import { Checkbox } from '../src/components/ui/checkbox/checkbox.tsx'
 import { Dropdown } from '../src/components/ui/dropdown/dropdown.tsx'
@@ -64,6 +66,8 @@ export const App = () => {
       <TextField label={'input'} type="password" />
       <Checkbox checked={checked} onChange={handleChecked} />
       <LoginForm />
+      <RegisterForm />
+      <ForgotPassword />
     </div>
   )
 }
