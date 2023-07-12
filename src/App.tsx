@@ -10,6 +10,7 @@ import { Avatar } from '../src/components/ui/avatar/avatar.tsx'
 import { Checkbox } from '../src/components/ui/checkbox/checkbox.tsx'
 import { Dropdown } from '../src/components/ui/dropdown/dropdown.tsx'
 import { Header } from '../src/components/ui/header'
+import { TabSwitcher } from '../src/components/ui/tabSwitcher'
 import { TextField } from '../src/components/ui/textField'
 
 import logoutIcon from './assets/dropdown/log-out-outline.svg'
@@ -48,6 +49,10 @@ export const App = () => {
   const handleChecked = () => {
     setChecked(!checked)
   }
+  //check email
+  const handleBackToSignIn = () => {
+    console.log('handleBackToSignIn')
+  }
 
   return (
     <div style={{ height: 10000, backgroundColor: '#000000' }}>
@@ -71,9 +76,10 @@ export const App = () => {
       <LoginForm />
       <RegisterForm />
       <ForgotPassword />
-      <CheckEmail email="sergey.ose.pyatigorsk@gmail.com" />
+      <CheckEmail email="sergey.ose.pyatigorsk@gmail.com" handleButton={handleBackToSignIn} />
       <CreateNewPassword />
       <Profile name="Sergey" email="sergey.ose.pyatigorsk@gmail.com" />
+      <TabSwitcher />
     </div>
   )
 }

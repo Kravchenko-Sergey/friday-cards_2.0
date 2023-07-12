@@ -21,7 +21,7 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    baseName: 'hjjh',
+    baseName: '',
     email: 'sergey.ose.pyatigorsk@gmail.com',
   },
 }

@@ -9,9 +9,10 @@ import s from './check-email.module.scss'
 
 type CheckEmailProps = {
   email: string
+  handleButton: () => void
 }
 
-export const CheckEmail: FC<CheckEmailProps> = ({ email }) => {
+export const CheckEmail: FC<CheckEmailProps> = ({ email, handleButton }) => {
   return (
     <Card>
       <div className={s.card}>
@@ -22,7 +23,9 @@ export const CheckEmail: FC<CheckEmailProps> = ({ email }) => {
         <Typography className={s.description}>
           We’ve sent an Email with instructions to {email}
         </Typography>
-        <Button fullWidth>Back to Sign In</Button>
+        <Button onClick={handleButton} fullWidth>
+          Back to Sign In
+        </Button>
       </div>
     </Card>
   )
