@@ -4,6 +4,7 @@ import { CheckEmail } from '../src/components/auth/check-email/check-email.tsx'
 import { CreateNewPassword } from '../src/components/auth/create-new-password/create-new-password.tsx'
 import { ForgotPassword } from '../src/components/auth/forgot-password/forgot-password.tsx'
 import { LoginForm } from '../src/components/auth/login-form'
+import { Profile } from '../src/components/auth/profile/profile.tsx'
 import { RegisterForm } from '../src/components/auth/register-form'
 import { Avatar } from '../src/components/ui/avatar/avatar.tsx'
 import { Checkbox } from '../src/components/ui/checkbox/checkbox.tsx'
@@ -53,25 +54,26 @@ export const App = () => {
       <Header
         isLoggedIn={isLoggedIn}
         handleButton={handleButton}
-        name={'Sergey'}
-        email={'sergey.ose.pyatigorsk@gmail.com'}
+        name="Sergey"
+        email="sergey.ose.pyatigorsk@gmail.com"
         src={avatarSrc}
         items={items}
       />
       <Avatar src={avatarSrc} />
       <Dropdown
-        name={'Sergey'}
-        email={'sergey.ose.pyatigorsk@gmail.com'}
+        name="Sergey"
+        email="sergey.ose.pyatigorsk@gmail.com"
         src={avatarSrc}
         items={items}
       />
-      <TextField label={'input'} type="password" />
+      <TextField label="input" type="password" />
       <Checkbox checked={checked} onChange={handleChecked} />
       <LoginForm />
       <RegisterForm />
       <ForgotPassword />
-      <CheckEmail email={'sergey.ose.pyatigorsk@gmail.com'} />
+      <CheckEmail email="sergey.ose.pyatigorsk@gmail.com" />
       <CreateNewPassword />
+      <Profile name="Sergey" email="sergey.ose.pyatigorsk@gmail.com" />
     </div>
   )
 }

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { TextField } from './'
 
 const meta = {
-  title: 'Components/TextField',
+  title: 'Components/UI/TextField',
   component: TextField,
   tags: ['autodocs'],
 } satisfies Meta<typeof TextField>

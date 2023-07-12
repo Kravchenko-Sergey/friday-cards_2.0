@@ -5,7 +5,7 @@ import { LogOutOutline } from '../../../assets/dropdown/logOutOutline.tsx'
 import { Button } from './'
 
 const meta = {
-  title: 'Components/Button',
+  title: 'Components/UI/Button',
   component: Button,
   tags: ['autodocs'],
   argTypes: {

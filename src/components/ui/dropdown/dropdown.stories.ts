@@ -6,7 +6,7 @@ import personIcon from '../../../assets/dropdown/person-outline.svg'
 import { Dropdown } from './'
 
 const meta = {
-  title: 'Components/Dropdown',
+  title: 'Components/UI/Dropdown',
   component: Dropdown,
   tags: ['autodocs'],
   argTypes: {
