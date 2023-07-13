@@ -3,10 +3,10 @@ import { FC } from 'react'
 import * as CheckboxRadix from '@radix-ui/react-checkbox'
 import * as LabelRadix from '@radix-ui/react-label'
 
-import { Check } from '../../../assets/check.tsx'
-import { Typography } from '../typography/typography.tsx'
-
 import s from './checkbox.module.scss'
+
+import { Check } from 'assets/check.tsx'
+import { Typography } from 'components/ui/typography'
 
 export type CheckboxProps = {
   className?: string

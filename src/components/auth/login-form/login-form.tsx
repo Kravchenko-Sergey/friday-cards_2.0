@@ -3,13 +3,12 @@ import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
 import z from 'zod'
 
-import { Button } from '../../ui/button'
-import { Card } from '../../ui/card'
-import { ControlledCheckbox } from '../../ui/controlled/controlled-checkbox.tsx'
-import { ControlledTextField } from '../../ui/controlled/controlled-text-field.tsx'
-import { Typography } from '../../ui/typography'
-
 import s from './login-form.module.scss'
+
+import { Button } from 'components/ui/button'
+import { Card } from 'components/ui/card'
+import { ControlledCheckbox, ControlledTextField } from 'components/ui/controlled'
+import { Typography } from 'components/ui/typography'
 
 const schema = z.object({
   login: z.string().trim().nonempty('Enter login'),

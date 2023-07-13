@@ -4,15 +4,15 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import z from 'zod'
 
-import { LogOutOutline } from '../../../../src/assets/dropdown/logOutOutline.tsx'
-import { Avatar } from '../../../../src/components/ui/avatar/avatar.tsx'
-import { Card } from '../../../../src/components/ui/card'
-import { ControlledTextField } from '../../../../src/components/ui/controlled'
-import { Button, Typography } from '../../../../src/components/ui/typography'
-import img from '../../../assets/edit-2-outline.svg'
-import avatarImg from '../../../assets/Ellipse 45.svg'
-
 import s from './profile.module.scss'
+
+import { LogOutOutline } from 'assets/dropdown/logOutOutline.tsx'
+import img from 'assets/edit-2-outline.svg'
+import avatarImg from 'assets/Ellipse 45.svg'
+import { Avatar } from 'components/ui/avatar/avatar.tsx'
+import { Card } from 'components/ui/card'
+import { ControlledTextField } from 'components/ui/controlled'
+import { Button, Typography } from 'components/ui/typography'
 
 type ProfileProps = {
   name: string

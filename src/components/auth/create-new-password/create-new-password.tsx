@@ -2,12 +2,12 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import z from 'zod'
 
-import { Card } from '../../../../src/components/ui/card'
-import { ControlledTextField } from '../../../../src/components/ui/controlled'
-import { Typography } from '../../../../src/components/ui/typography'
-import { Button } from '../../../components/ui/button'
-
 import s from './create-new-password.module.scss'
+
+import { Button } from 'components/ui/button'
+import { Card } from 'components/ui/card'
+import { ControlledTextField } from 'components/ui/controlled'
+import { Typography } from 'components/ui/typography'
 
 const schema = z.object({
   login: z.string().trim().nonempty('Enter login'),

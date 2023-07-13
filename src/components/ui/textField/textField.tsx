@@ -1,10 +1,10 @@
 import { ComponentProps, ComponentPropsWithoutRef, FC, useState } from 'react'
 
-import { EyeSvg } from '../../../assets/eye.tsx'
-import { VisibilityOffSvg } from '../../../assets/visibility-off.tsx'
-import { Typography } from '../typography/typography.tsx'
-
 import s from './textField.module.scss'
+
+import { EyeSvg } from 'assets/eye.tsx'
+import { VisibilityOffSvg } from 'assets/visibility-off.tsx'
+import { Typography } from 'components/ui/typography'
 
 export type TextFieldProps = {
   containerProps?: ComponentProps<'div'>

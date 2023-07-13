@@ -1,20 +1,20 @@
 import { useState } from 'react'
 
-import { CheckEmail } from '../src/components/auth/check-email/check-email.tsx'
-import { CreateNewPassword } from '../src/components/auth/create-new-password/create-new-password.tsx'
-import { ForgotPassword } from '../src/components/auth/forgot-password/forgot-password.tsx'
-import { LoginForm } from '../src/components/auth/login-form'
-import { Profile } from '../src/components/auth/profile/profile.tsx'
-import { RegisterForm } from '../src/components/auth/register-form'
-import { Avatar } from '../src/components/ui/avatar/avatar.tsx'
-import { Checkbox } from '../src/components/ui/checkbox/checkbox.tsx'
-import { Dropdown } from '../src/components/ui/dropdown/dropdown.tsx'
-import { Header } from '../src/components/ui/header'
-import { TabSwitcher } from '../src/components/ui/tabSwitcher'
-import { TextField } from '../src/components/ui/textField'
-
-import logoutIcon from './assets/dropdown/log-out-outline.svg'
-import personIcon from './assets/dropdown/person-outline.svg'
+import logoutIcon from 'assets/dropdown/log-out-outline.svg'
+import personIcon from 'assets/dropdown/person-outline.svg'
+import { CheckEmail } from 'components/auth/check-email'
+import { CreateNewPassword } from 'components/auth/create-new-password'
+import { ForgotPassword } from 'components/auth/forgot-password'
+import { LoginForm } from 'components/auth/login-form'
+import { Profile } from 'components/auth/profile'
+import { RegisterForm } from 'components/auth/register-form'
+import { Avatar } from 'components/ui/avatar'
+import { Checkbox } from 'components/ui/checkbox'
+import { Dropdown } from 'components/ui/dropdown'
+import { Header } from 'components/ui/header'
+import { Slider } from 'components/ui/slider'
+import { TabSwitcher } from 'components/ui/tabSwitcher'
+import { TextField } from 'components/ui/textField'
 
 export const App = () => {
   // header
@@ -80,6 +80,7 @@ export const App = () => {
       <CreateNewPassword />
       <Profile name="Sergey" email="sergey.ose.pyatigorsk@gmail.com" />
       <TabSwitcher />
+      <Slider />
     </div>
   )
 }

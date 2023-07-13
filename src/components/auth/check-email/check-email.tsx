@@ -1,11 +1,11 @@
 import { FC } from 'react'
 
-import { Card } from '../../../../src/components/ui/card'
-import { Typography } from '../../../../src/components/ui/typography'
-import img from '../../../assets/Group 281.svg'
-import { Button } from '../../../components/ui/button'
-
 import s from './check-email.module.scss'
+
+import img from 'assets/Group 281.svg'
+import { Button } from 'components/ui/button'
+import { Card } from 'components/ui/card'
+import { Typography } from 'components/ui/typography'
 
 type CheckEmailProps = {
   email: string

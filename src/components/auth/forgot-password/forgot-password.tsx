@@ -3,12 +3,12 @@ import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
 import z from 'zod'
 
-import { Button } from '../../../../src/components/ui/button'
-import { Card } from '../../../../src/components/ui/card'
-import { ControlledTextField } from '../../../../src/components/ui/controlled'
-import { Typography } from '../../../../src/components/ui/typography'
-
 import s from './forgot-password.module.scss'
+
+import { Button } from 'components/ui/button'
+import { Card } from 'components/ui/card'
+import { ControlledTextField } from 'components/ui/controlled'
+import { Typography } from 'components/ui/typography'
 
 const schema = z.object({
   email: z.string().trim().nonempty('Enter email'),

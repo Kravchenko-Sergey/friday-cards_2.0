@@ -1,11 +1,11 @@
 import { FC } from 'react'
 
-import { Button } from '../button'
-import { Dropdown } from '../dropdown/dropdown.tsx'
-import { Typography } from '../typography'
-
 import s from './header.module.scss'
-import { Logo } from './logo/logo.tsx'
+
+import { Button } from 'components/ui/button'
+import { Dropdown } from 'components/ui/dropdown'
+import { Logo } from 'components/ui/header/logo'
+import { Typography } from 'components/ui/typography'
 
 type MenuItem = {
   id: string

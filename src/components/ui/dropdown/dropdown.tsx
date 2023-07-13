@@ -2,10 +2,10 @@ import { FC } from 'react'
 
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 
-import { Avatar } from '../avatar/avatar.tsx'
-import { Typography } from '../typography/typography.tsx'
-
 import s from './dropdown.module.scss'
+
+import { Avatar } from 'components/ui/avatar'
+import { Typography } from 'components/ui/typography'
 
 type MenuItem = {
   id: string
